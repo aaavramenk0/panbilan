@@ -20,20 +20,20 @@ const Header = () => {
     
     return (
         <Navbar isBordered>
-            <NavbarContent className="sm:hidden" justify="start">
+            <NavbarContent className="md:hidden" justify="start">
                 <NavbarMenuToggle /> 
             </NavbarContent>
         
-            <NavbarContent className="sm:hidden pr-4" justify="center">
+            {/* <NavbarContent className="sm:hidden pr-4" justify="center">
                 <NavbarBrand>
                     <Link href="/"><Image src={logo} alt="Logo"></Image></Link>
                 </NavbarBrand>
-            </NavbarContent> 
+            </NavbarContent>  */}
 
-            <NavbarContent className="hidden sm:flex gap-8" justify="end">
-                <NavbarBrand> 
+            <NavbarContent className="hidden md:flex gap-10 w-full" justify="center">
+                {/* <NavbarBrand> 
                     <Link href="/"><Image src={logo} alt="Logo"></Image></Link>
-                </NavbarBrand>
+                </NavbarBrand> */}
 
                 {menuItems.map((item, index) => (
                     <NavbarItem isActive={pathname == `${item.href}` ? true : false} key={index}>
